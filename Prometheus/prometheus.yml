@@ -1,0 +1,9 @@
+# Config file for prometheus
+global:
+  scrape_interval: 15s # set the scrape interval every 15 seconds, it's the interval when prometheus will get the metrics from Jenkins
+  evaluation_interval: 15s # the interval for alerts
+scrape_configs:
+  - job_name: 'jenkins'
+    metrics_path: /prometheus # where jenkins put the metrics where prometheus can scrape 'http://[Jenkins_Host]:[PORT]/prometheus'
+    static_configs:  
+      - targets: ["localhost:8081"] # To listen in the Jenkins's listening port, "docker-compose service name:PORT"
