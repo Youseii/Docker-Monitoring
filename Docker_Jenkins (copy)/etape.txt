@@ -1,0 +1,24 @@
+GRAFANA ---------------------------------
+
+Dans Grafana, d'abord se connecter:
+- login: admin
+- mdp: mdp du compte
+
+crée un dashboard choisir une config prendre prometheus
+mettre l'adresse:  http://prometheus:9090
+
+ensuite apres avoir fini les configs ici, il faut save & test
+puis créer un dashboard à partir de ça
+
+DANS JENKINS POUR PROMETHEUS -----------------------
+J'ai créer une pipeline avec hello-world juste pour avoir des metrics 
+
+ensuite j'ai installé le plugins Prometheus metrics
+Puis dans 'Manage Jenkin' > 'SYSTEM' j'ai fait la config
+dans path il y a 'prometheus' c'est le endpoint ou prometheus va scrape les données
+pour y accéder c'est : 'localhost:8081/prometheus' 
+
+Ensuite je modifie le 'prometheus.yml' pour ajouter /prometheus
+
+
+
