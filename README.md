@@ -21,10 +21,10 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
   1) You have first to execute inside the same folder of the _docker-compose.yml_, the docker-compose with this command: `sudo docker compose up -d`<br>
   It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'
 
-**Now you have access to different webpage:**
-
-| Service     | URL                   |
-| ----------- | --------------------- |
-| Jenkins     | http://localhost:8080 |
-| Prometheus  | http://localhost:9090 |
-| Grafana     | http://localhost:3000 |
+  **Now you have access to different webpage:**
+  
+  | Service     | URL                   |
+  | ----------- | --------------------- |
+  | Jenkins     | http://localhost:8080 |
+  | Prometheus  | http://localhost:9090 |
+  | Grafana     | http://localhost:3000 |
