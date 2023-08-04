@@ -36,5 +36,5 @@ Now you have access to Jenkins, you have to configure it.<br>
 First connect to the page, it will ask for a password, you can have it by looking in the logs of the jenkins containers with these commands: <br>
 
   - `sudo docker ps` to see all the containers running, you need to get the _'Container ID'_ of Jenkins.
-  - `sudo docker logs [_'Container ID of Jenkins'_]` you will see the Jenkins password for the web page, copy and paste it in webpage
+  - `sudo docker logs ['Container ID of Jenkins']` you will see the Jenkins password for the web page, copy and paste it in webpage
 
