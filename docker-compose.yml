@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  
+  # Jenkins service
+  jenkins_cicd:
+    image: jenkins/jenkins:lts
+    ports:
+      - 8081:8080   # Expose port 8080 of the container to the port 8081 of the host ( Jenkins web )
+      - 50000:50000 # Agent Jenkins needed for the good works of the services
+    volumes:
+      - ./config:/var/jenkins_home # put all the config file into 'config' in the host for a 'backup'
+    networks:
+      - cicd
+    
+  # Nginx web app to manage with jenkins
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8080:80 # Expose port 80 of the container to the port 8080 of the host ( Nginx web )
+    volumes:
+      - ../Docker_Webserv/website:/usr/share/nginx/html
+    networks:
+      - cicd
+    
+  # Prometheus service to get the metric of jenkins ( data system )
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - 9090:9090
+    volumes:
+      - ../Prometheus/prometheus.yml:/etc/prometheus/prometheus.yml # Mount the prometheus's config file into the contener, for personal configuration
+      - ../Prometheus/data:/prometheus/data # a 'backup' for the data in local
+    networks:
+      - cicd 
+
+  # Grafana image to use the metric that prometheus got into visual ( diagram, table and so on )
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000
+    user: "1000" # the user id to let the permission in the container to access the file
+    volumes:
+      - ../Grafana/grafana_data:/var/lib/grafana # grafana backup
+    networks:
+      - cicd
+
+networks:
+    cicd:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+          - subnet: 192.168.2.0/24
