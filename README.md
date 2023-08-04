@@ -24,11 +24,12 @@ the '-d' is for _detached mode_ in docker, it will run all the containers in the
 
   **After the command you will have access to differents webpages:**
   
-  | Service     | URL                   |
-  | ----------- | --------------------- |
-  | Jenkins     | http://localhost:8080 |
-  | Prometheus  | http://localhost:9090 |
-  | Grafana     | http://localhost:3000 |
+  | Service     |     URL                          |
+  | ----------- | -------------------------------- |
+  | Jenkins     | http://localhost:8080            |
+  | Prometheus  | http://localhost:9090            |
+  | Grafana     | http://localhost:3000            |
+  | Metrics     | http://localhost:8080/prometheus |
 
 ### Jenkins Configurations
 
@@ -43,6 +44,8 @@ After the Jenkins's installation, you have to install a 'Prometheus plugins' cal
 You will probably have to restart the container, I do `sudo docker compose stop` and `sudo docker compose up -d`
 
 After that go back to Jenkins, you need to confirm in the System part, that Prometheus appear, if in the path there is _'\prometheus'_ so everything is good.
+
+Create a simple pipeline with a Hello-world script to build for testing purpose in Grafana.
 
 ### Prometheus
 
