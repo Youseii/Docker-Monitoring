@@ -38,3 +38,6 @@ First connect to the page, it will ask for a password, you can have it by lookin
   - `sudo docker ps` to see all the containers running, you need to get the _'Container ID'_ of Jenkins.
   - `sudo docker logs ['Container ID of Jenkins']` you will see the Jenkins password for the web page, copy and paste it in webpage
 
+After the Jenkins's installation, you have to install a 'Prometheus plugins' call '_Promtheus Metric Exporter_'.
+
+You will probably have to restart the container, I do ` sudo docker compose stop ` and ` sudo docker compose up -d `
