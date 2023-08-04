@@ -5,6 +5,9 @@ I have made a pipeline where I put a simple script in Jenkins ( Hello-World ) to
 Grafana will make grafics, dashboard and so on, to have a better understanding of the data.
 
 ![Description de l'image](ReadMe-Pictures/PipelineCICD.jpg)
+<p align="center">
+  <img src="ReadMe-Pictures/PipelineCICD.jpg" alt="Description de l'image">
+</p>
 
 
 ## Requirements
