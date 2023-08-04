@@ -40,4 +40,6 @@ First connect to the page, it will ask for a password, you can have it by lookin
 
 After the Jenkins's installation, you have to install a 'Prometheus plugins' call '_Promtheus Metric Exporter_'.
 
-You will probably have to restart the container, I do ` sudo docker compose stop ` and ` sudo docker compose up -d `
+You will probably have to restart the container, I do `sudo docker compose stop` and `sudo docker compose up -d`
+
+After that go back to Jenkins, you need to confirm in the System part, that Prometheus appear, if in the path there is _'\prometheus'_ so everything is good.
