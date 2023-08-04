@@ -18,4 +18,5 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 
 ## Installation
 
-  1) You have first to execute the docker-compose with this command: ```sudo docker compose up -d```
+  1) You have first to execute inside the same folder of the 'docker-compose.yml', the docker-compose with this command: ```sudo docker compose up -d```
+It will build the docker compose and create every containers of each services we put in the 'docker-compose.yml'
