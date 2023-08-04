@@ -46,4 +46,8 @@ After that go back to Jenkins, you need to confirm in the System part, that Prom
 
 ### Prometheus
 
-In Prometheus, you just have to check if the target is up, you can see that in'_status_' and '_targets_'
+In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'
+
+### Grafana
+
+You have to create your own grafics by adding a data source Prometheus, just add the good URL in the configuration of the data source.
