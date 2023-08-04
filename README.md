@@ -19,7 +19,7 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 ## 🖱️ Installation
 
 You have to execute inside the same folder of the _docker-compose.yml_, the docker-compose with the command: `sudo docker compose up -d`<br>
-It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'
+It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'<br>
 the '-d' is for detached mode in docker, it will run all the containers in the background
 
   **After the command you will have access to differents webpages:**
