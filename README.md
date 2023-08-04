@@ -1,6 +1,6 @@
 # _🖥️ CI_CD Docker (Jenkins - Prometheus - Grafana )_
 
-## Description
+## 📚 Description
 <div style="text-align: justify;">
   I have made a pipeline where I put a simple script in Jenkins ( Hello-World ) to produce metrics, after that with Prometheus and some plugins, I get all the data needed to send to Grafana.
   
@@ -13,10 +13,10 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 </p>
 
 
-## Requirements
-  - Docker on your host machine
+## 🛠️ Requirements
+  - 🐋 Docker on your host machine
 
-## Installation
+## 🖱️ Installation
 
   1) You have first to execute inside the same folder of the _docker-compose.yml_, the docker-compose with this command: `sudo docker compose up -d`<br>
   It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'
