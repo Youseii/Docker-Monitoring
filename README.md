@@ -18,5 +18,4 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 
 ## Installation
 
-  1) You have first to execute the docker-compose
-  ```sudo docker compose up -d``` 
+  1) You have first to execute the docker-compose with this command: ```sudo docker compose up -d```
