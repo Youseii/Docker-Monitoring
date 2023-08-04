@@ -22,3 +22,9 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'
 
 **Now you have access to different webpage:**
+
+| Service     | URL                   |
+| ----------- | --------------------- |
+| Jenkins     | http://localhost:8080 |
+| Prometheus  | http://localhost:9090 |
+| Grafana     | http://localhost:3000 |
