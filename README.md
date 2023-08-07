@@ -50,6 +50,10 @@ Create a simple pipeline with a Hello-world script to build for testing purpose.
 ### _Prometheus_
 
 In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'.
+</div>
+<p align="center">
+  <img src="ReadMe-Pictures/target.png" alt="Description de l'image">
+</p>
 
 ### _Grafana_
 
