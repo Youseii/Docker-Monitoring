@@ -39,8 +39,6 @@ First connect to the page, it will ask for a password, you can have it by lookin
   - `sudo docker ps` to see all the containers running, you need to get the _'Container ID'_ of Jenkins.
   - `sudo docker logs ['Container ID of Jenkins']` you will see the Jenkins password for the web page, copy and paste it in webpage
 
-*** If you have a proxy issue, go to the security settings and Enabled the CSRF Protection with the button enable the proxy compatibility
-
 After the Jenkins's installation, you have to install a 'Prometheus plugins' call '_Promtheus Metric Exporter_'.
 
 You will probably have to restart the container, I do `sudo docker compose stop` and `sudo docker compose up -d`
@@ -58,6 +56,10 @@ In Prometheus, you just have to check if the target is up, you can see that in '
 You have to create your own grafics by adding a data source Prometheus, just add the good URL in the configuration of the data source.
 
 ### ERRORS
+
+If you have trouble during the installation, here some things that occurs during the project:
+
+  - Proxy errors that block you to do configuration, script and so on... You have to enable the CRSF proxy compatibility in the security settings
 
 </div>
 <p align="center">
