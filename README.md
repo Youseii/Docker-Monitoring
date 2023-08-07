@@ -1,6 +1,6 @@
 # _🖥️ CI_CD Docker (Jenkins - Prometheus - Grafana )_
 
-## 📚 Description
+## 📚 _Description_
 <div style="text-align: justify;">
   I have made a pipeline where I put a simple script in Jenkins ( Hello-World ) to produce metrics, after that with Prometheus and some plugins, I get all the data needed to send to Grafana.
   
@@ -13,10 +13,10 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 </p>
 
 
-## 🛠️ Requirements
+## 🛠️ _Requirements_
   - 🐋 Docker on your host machine
 
-## 🖱️ Installation
+## 🖱️ _Installation_
 
 You have to execute inside the same folder of the _docker-compose.yml_, the docker-compose with the command: `sudo docker compose up -d`<br>
 It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'<br>
@@ -31,7 +31,7 @@ the '-d' is for _detached mode_ in docker, it will run all the containers in the
   | Grafana     | http://localhost:3000            |
   | Metrics     | http://localhost:8080/prometheus |
 
-### Jenkins Configurations
+### _Jenkins Configurations_
 
 Now you have access to Jenkins, you have to configure it.<br>
 First connect to the page, it will ask for a password, you can have it by looking in the logs of the jenkins containers with these commands: <br>
@@ -47,15 +47,15 @@ After that go back to Jenkins, you need to confirm in the System part, that Prom
 
 Create a simple pipeline with a Hello-world script to build for testing purpose.
 
-### Prometheus
+### _Prometheus_
 
 In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'.
 
-### Grafana
+### _Grafana_
 
 You have to create your own grafics by adding a data source Prometheus, just add the good URL in the configuration of the data source.
 
-### ERRORS
+### _ERRORS_
 
 If you have trouble during the installation, here some things that occurs during the project:
 
