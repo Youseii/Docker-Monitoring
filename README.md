@@ -45,11 +45,11 @@ You will probably have to restart the container, I do `sudo docker compose stop`
 
 After that go back to Jenkins, you need to confirm in the System part, that Prometheus appear, if in the path there is _'\prometheus'_ so everything is good.
 
-Create a simple pipeline with a Hello-world script to build for testing purpose in Grafana.
+Create a simple pipeline with a Hello-world script to build for testing purpose.
 
 ### Prometheus
 
-In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'
+In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'.
 
 ### Grafana
 
