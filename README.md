@@ -57,7 +57,16 @@ In Prometheus, you just have to check if the target is up, you can see that in '
 
 ### _Grafana_
 
-You have to create your own grafics by adding a data source Prometheus, just add the good URL in the configuration of the data source.
+By default Grafana give admin and *admin* as *username* and *password*, you will have to change it for the first time connection.
+
+_To create your own datasource_:
+  * Create a datasource --> In Dashboards - new Dashboards - Add visualization - configure new data source
+  * Choose Prometheus and add the prometheus URL server ( http://prometheus:9090 ) change configuration as you need and save it at the end
+
+_To create you own dashboards_:
+  * In Dashboards - new Dashboards - Add visualization - choose the data source created previously
+  * Select metrics that you want to display in the _Query tab_, next is to run the Query to display it
+
 
 ### _ERRORS_
 
