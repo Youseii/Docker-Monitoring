@@ -67,6 +67,10 @@ _To create you own dashboards_:
   * In Dashboards - new Dashboards - Add visualization - choose the data source created previously
   * Select metrics that you want to display in the _Query tab_, next is to run the Query to display it
 
+</div>
+<p align="center">
+  <img src="ReadMe-Pictures/grafana.PNG" alt="Description de l'image">
+</p>
 
 ### _ERRORS_
 
