@@ -81,4 +81,3 @@ If you have trouble during the installation, here some things that occurs during
 <p align="center">
   <img src="ReadMe-Pictures/CRSF.PNG" alt="Description de l'image">
 </p>
-
