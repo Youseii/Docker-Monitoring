@@ -56,3 +56,11 @@ In Prometheus, you just have to check if the target is up, you can see that in '
 ### Grafana
 
 You have to create your own grafics by adding a data source Prometheus, just add the good URL in the configuration of the data source.
+
+### ERRORS
+
+</div>
+<p align="center">
+  <img src="ReadMe-Pictures/CRSF.PNG" alt="Description de l'image">
+</p>
+
