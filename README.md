@@ -59,8 +59,7 @@ You have to create your own grafics by adding a data source Prometheus, just add
 
 If you have trouble during the installation, here some things that occurs during the project:
 
-  - Proxy errors that block you to do configuration, script and so on... You have to enable the CRSF proxy compatibility in the security settings
-
+  * Proxy errors that block you to do configuration, script and so on... You have to enable the CRSF proxy compatibility in the security settings
 </div>
 <p align="center">
   <img src="ReadMe-Pictures/CRSF.PNG" alt="Description de l'image">
