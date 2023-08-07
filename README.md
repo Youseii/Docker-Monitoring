@@ -31,7 +31,7 @@ the '-d' is for _detached mode_ in docker, it will run all the containers in the
   | Grafana     | http://localhost:3000            |
   | Metrics     | http://localhost:8080/prometheus |
 
-### _Jenkins Configurations_
+## _Jenkins Configurations_
 
 Now you have access to Jenkins, you have to configure it.<br>
 First connect to the page, it will ask for a password, you can have it by looking in the logs of the jenkins containers with these commands: <br>
@@ -47,7 +47,7 @@ After that go back to Jenkins, you need to confirm in the System part, that Prom
 
 Create a simple pipeline with a Hello-world script to build for testing purpose.
 
-### _Prometheus_
+## _Prometheus_
 
 In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'.
 </div>
@@ -55,7 +55,7 @@ In Prometheus, you just have to check if the target is up, you can see that in '
   <img src="ReadMe-Pictures/target.png" alt="Description de l'image">
 </p>
 
-### _Grafana_
+## _Grafana_
 
 By default Grafana give admin and *admin* as *username* and *password*, you will have to change it for the first time connection.
 
@@ -72,7 +72,7 @@ _To create you own dashboards_:
   <img src="ReadMe-Pictures/grafana.PNG" alt="Description de l'image">
 </p>
 
-### _ERRORS_
+## _ERRORS_
 
 If you have trouble during the installation, here some things that occurs during the project:
 
