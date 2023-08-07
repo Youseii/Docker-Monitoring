@@ -18,18 +18,18 @@ Everythings is under Docker 🐋, I have containerize all the services by using 
 
 ## 🖱️ _Installation_
 
-You have to execute inside the same folder of the _docker-compose.yml_, the docker-compose with the command: `sudo docker compose up -d`<br>
-It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'<br>
-the '-d' is for _detached mode_ in docker, it will run all the containers in the background
+You have to execute inside the same folder of the _docker-compose.yml_, the docker-compose with the command: `sudo docker compose up -d`.<br>
+It will build the docker compose and create every containers of each services that are present inside the '_docker-compose.yml_'.<br>
+the '-d' is for _detached mode_ in docker, it will run all the containers in the background.
 
   **After the command you will have access to differents webpages:**
   
-  | Service     |     URL                          |
-  | ----------- | -------------------------------- |
-  | Jenkins     | http://localhost:8080            |
-  | Prometheus  | http://localhost:9090            |
-  | Grafana     | http://localhost:3000            |
-  | Metrics     | http://localhost:8080/prometheus |
+  | Service     |                 URL                 |
+  | ----------- | ----------------------------------- |
+  | Jenkins     | http://jenkins_cicd:8080            |
+  | Prometheus  | http://prometheus:9090              |
+  | Grafana     | http://grafana:3000                 |
+  | Metrics     | http://jenkins_cicd:8080/prometheus |
 
 ## _Jenkins Configurations_
 
@@ -49,7 +49,7 @@ Create a simple pipeline with a Hello-world script to build for testing purpose.
 
 ## _Prometheus_
 
-In Prometheus, you just have to check if the target is up, you can see that in '_status_' and '_targets_'.
+In Prometheus, you have to check if the target is up, you can see that in '_status_' and '_targets_'.
 </div>
 <p align="center">
   <img src="ReadMe-Pictures/target.png" alt="Description de l'image">
@@ -76,7 +76,7 @@ _To create you own dashboards_:
 
 If you have trouble during the installation, here some things that occurs during the project:
 
-  * Proxy errors that block you to do configuration, script and so on... You have to enable the CRSF proxy compatibility in the security settings
+  * Proxy errors that block you to do configuration, script and so on... You have to enable the CRSF proxy compatibility in the security settings.
 </div>
 <p align="center">
   <img src="ReadMe-Pictures/CRSF.PNG" alt="Description de l'image">
