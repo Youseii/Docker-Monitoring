@@ -26,10 +26,10 @@ the '-d' is for _detached mode_ in docker, it will run all the containers in the
   
   | Service     |                 URL                 |
   | ----------- | ----------------------------------- |
-  | Jenkins     | http://localhost:8080               |
-  | Metrics     | http://localhost:8080/prometheus    |
-  | Prometheus  | http://localhost:9090               |
-  | Grafana     | http://localhost:3000               |
+  | Jenkins     | http://jenkins_cicd:8080            |
+  | Metrics     | http://jenkins_cicd:8080/prometheus |
+  | Prometheus  | http://prometheus:9090              |
+  | Grafana     | http://grafana:3000                 |
 
 ## _Jenkins Configurations_
 
