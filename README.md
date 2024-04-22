@@ -49,7 +49,7 @@ Create a simple pipeline with a Hello-world script to build for testing purpose.
 
 ## _Prometheus_
 
-In Prometheus, you have to check if the target is up, you can see that in '_status_' and '_targets_'.
+In Prometheus, you have to check if the target is up, you can see that in '_status_' and '_targets_'. ( Check the URL part at the start of the ReadMe )
 </div>
 <p align="center">
   <img src="ReadMe-Pictures/target.png" alt="Description de l'image">
