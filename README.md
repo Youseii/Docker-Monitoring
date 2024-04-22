@@ -43,7 +43,7 @@ After the Jenkins's installation, you have to install a 'Prometheus plugins' cal
 
 You will probably have to restart the container, I do `sudo docker compose stop` and `sudo docker compose up -d`
 
-After that go back to Jenkins, you need to confirm in the System part, that Prometheus appear, if in the path there is _'\prometheus'_ so everything is good.
+After that go back to Jenkins, you need to confirm in the System part, that Prometheus plugin is installed correctly, you can check by adding in the url of jenkins  _'\prometheus'_  if you have a webpage with some metrics or weird information, it means that everything is good ! 
 
 Create a simple pipeline with a Hello-world script to build for testing purpose.
 
