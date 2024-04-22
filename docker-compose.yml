@@ -6,7 +6,7 @@ services:
     image: jenkins/jenkins:lts
     ports:
       - 8080:8080   # Expose port 8080 (right) of the container to the port 8080 (left) of the host ( Jenkins web )
-      - 50000:50000 # Agent Jenkins needed for the good works of the services
+      - 50000:50000 # Agent Jenkins needed for the good work of the services
     volumes:
       - ./Jenkins/config:/var/jenkins_home # put all the config file into 'config' in the host for a 'backup' 
     networks:
