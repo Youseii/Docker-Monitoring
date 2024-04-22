@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+ drupal:
+    image: drupal_image
+    ports:
+      - "8080:80"
+    volumes:
+      - drupal_config:/var/www/html/sites/default/files
+      - drupal_logs:/var/log/apache2
+    depends_on:
+      - postgres
+
+ postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: test
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+ drupal_config:
+ drupal_logs:
+ postgres_data:
