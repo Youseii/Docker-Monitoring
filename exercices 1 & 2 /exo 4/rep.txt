@@ -1,1 +1,15 @@
 Challenge 1:
+j'ai pull l'image puis fait un docker history de l'image:
+- voici le resultat ARG MON_BEAU_DRAPEAU=DOSE{bR4v0-l4-T34M!} 
+
+Challenge 2:
+J'ai sudo docker save spykou/docksec > docksec.tar le contenu puis extrait le .tar
+ensuite j'ai regardé le resultat en brute force dans eebed19322aaa0082058596cc4cff6c33253f1ce4327e9ae4399edb2f657242e
+
+le resultat: 
+FCSC{b38095916b2b578109cbf35b8be713b04a64b2b2df6d7325934be63b7566be3b}
+
+Challenge 3:
+meme methode que challenge 2
+j'ai trouvé un flag.enc
+
