@@ -18,3 +18,7 @@ sudo openssl enc -aes-256-cbc -d -in flag.enc -out decrypted.txt -pass file:pass
 resultat:
 Well_D0ne_D0ckER_L@y3rs_Inspect0R
 
+
+
+Challenge 8:
+
